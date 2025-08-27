@@ -19,33 +19,16 @@ Exports a Thermostat (water temp), a Pump 1 switch and a Spa Light to Apple Home
 
 Example config (added by UI):
 
-\## Configure
-
-
-
-```json
-
 {
-
-&nbsp; "platform": "GeckoInTouch2",
-
-&nbsp; "baseUrl": "http://127.0.0.1:8088",
-
-&nbsp; "pollingIntervalSec": 5,
-
-&nbsp; "accessories": {
-
-&nbsp;   "thermostat": true,
-
-&nbsp;   "pump1": true,
-
-&nbsp;   "light": true
-
-&nbsp; }
-
+  "platform": "GeckoInTouch2",
+  "baseUrl": "http://127.0.0.1:8088",
+  "pollingIntervalSec": 5,
+  "accessories": {
+    "thermostat": true,
+    "pump1": true,
+    "light": true
+  }
 }
-
-
 
 ## Sidecar API
 
