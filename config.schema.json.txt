@@ -1,0 +1,31 @@
+{
+  "pluginAlias": "GeckoInTouch2",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "baseUrl": {
+        "title": "Sidecar Base URL",
+        "type": "string",
+        "default": "http://127.0.0.1:8088",
+        "required": true
+      },
+      "pollingIntervalSec": {
+        "title": "Polling interval (seconds)",
+        "type": "integer",
+        "default": 5,
+        "minimum": 2
+      },
+      "accessories": {
+        "title": "Accessories",
+        "type": "object",
+        "properties": {
+          "thermostat": { "title": "Thermostat", "type": "boolean", "default": true },
+          "pump1": { "title": "Pump 1 switch", "type": "boolean", "default": true },
+          "light": { "title": "Spa light", "type": "boolean", "default": true }
+        }
+      }
+    }
+  }
+}

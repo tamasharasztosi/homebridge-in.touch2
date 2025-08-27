@@ -1,0 +1,21 @@
+{
+  "name": "homebridge-gecko-intouch2",
+  "version": "0.1.0",
+  "description": "Homebridge plugin for Gecko in.touch2 via HTTP sidecar (geckolib)",
+  "main": "dist/index.js",
+  "keywords": ["homebridge-plugin", "gecko", "intouch2", "spa"],
+  "engines": { "node": ">=18.0.0", "homebridge": ">=1.6.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.11.30"
+  },
+  "license": "MIT"
+}
